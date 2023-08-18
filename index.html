@@ -9,8 +9,12 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
   <meta name="bingbot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <meta content="Portfolio" name="description">
+  <meta content="Portfolio" name="description"/>
   <meta content="Jerome Avecilla" name="author">
+  <meta property="og:image" src="storage/images/favicon.jpg" />
+  <meta property="og:image:width" content="608"/>
+  <meta property="og:image:height" content="260"/>
+  <meta property="og:image:alt" content="Jerome Avecilla | Portfolio" />
 
   <title>Jerome Avecilla | Portfolio</title>
 
@@ -19,6 +23,11 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+  <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link href="src/assets/fontawesome/css/all.min.css" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="src/assets/aos/aos.css" rel="stylesheet">
@@ -31,6 +40,9 @@
   <!--Main CSS File -->
   <link href="src/custom/stylesheet/style.css" rel="stylesheet">
 
+  <style type="text/css">
+    
+  </style>
 </head>
 
 <body>
@@ -44,16 +56,16 @@
 
       <div class="profile">
         <img src="storage/images/sidebar2.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a onclick="location.reload();" style="cursor: pointer;">Jerome Avecilla</a></h1>
+        <h1 class="text-light"><a onclick="location.reload();" class="dev_name">Jerome Avecilla</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/itsjzerome_" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/jerome.avecilla24" class="facebook">
+          <a href="https://twitter.com/itsjzerome_" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/jerome.avecilla24" target="_blank" class="facebook">
             <i class="bx bxl-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/_jzerome/" class="instagram">
+          <a href="https://www.instagram.com/_jzerome/" target="_blank" class="instagram">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a href="https://github.com/javecilla" class="google-plus"><i class="bx bxl-github"></i></a>
+          <a href="https://github.com/javecilla" target="_blank" class="google-plus"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
@@ -69,11 +81,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center"
-  style="width: 100%;
-  height: 100vh;
-  background: url('storage/images/home.jpg') top center;
-  background-size: cover;">
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Welcome!</h1>
       <p>Hi, i'm <span class="typed" data-typed-items="Jerome Avecilla"></span></p>
@@ -88,8 +96,8 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p style="text-align: justify;">
-            I am currently a first-year BSIT (Bachelor of Science in Information Technology) student. With a background in Grade 12 ICT studies, I have developed a strong passion for the technology industry. My primary focus lies in web development, and I am dedicated to honing my skills in this field. I am pursuing a degree in Information Technology (IT) to further enhance my knowledge and expertise, as I strive to establish a successful career in the technology sector.
+          <p class="paragraph_text">
+            I am currently a first-year Bachelor of Science in Information Technology (BSIT) student. With a background in Senior High School ICT studies. I have developed a strong passion for the technology industry. My primary focus lies in web development, and I am dedicated to honing my skills in this field. I am pursuing a degree in Information Technology (IT) to further enhance my knowledge and expertise, as I strive to establish a successful career in the technology sector.
           </p>
         </div>
 
@@ -118,7 +126,7 @@
               </ul> 
             </div>
           </div>
-          <p style="text-align: justify;">
+          <p class="paragraph_text">
             As a passionate coder, I invest a considerable amount of time honing my skills and expanding my knowledge in various aspects of web development. Since embarking on my journey in 2020, I have become proficient in HTML, CSS, and JavaScript. I am dedicated to continuously learning and growing in the field, and am excited to bring my expertise to your project.
           </p>
         </div>
@@ -132,7 +140,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Skills</h2>
-        <p style="text-align: justify;">
+        <p class="paragraph_text" style="text-align: justify;">
           I'm thrilled to share my web development tech stack and skills. With ongoing learning and a passion for innovation, I continuously expand my knowledge to improve my skills and stay ahead of industry trends.
           </p>
         </div>
@@ -356,11 +364,7 @@
 
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Mapulang Lupa, Pandi, Bulacan, Philippines</p>
-              </div>
+              
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
@@ -374,15 +378,20 @@
                 <p>(+63) 977 2465 533</p>
               </div>
 
-              <div>
-                <p spellcheck="true">
-                  If you are seeking a skilled developer to drive your business, capstone project, or other initiatives to success, I am eager to be of service. As a dedicated freelancer with a passion for honing my skills and embracing new challenges, I am committed to applying my expertise to help you achieve your goals. Please feel free to contact me via email to discuss how I can contribute to your project and bring value to your organization.
-                </p>
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Mapulang Lupa, Pandi, Bulacan, Philippines</p>
               </div>
+              <div class="card">
+
+                <iframe src="https://www.google.com/maps/d/embed?mid=1mXw5Y1QhSR6ZCckt4ZTAbzlzqJO6w8A&ehbc=2E312F" width="640" height="300" class="card-img-top"></iframe>
+              </div>
+
             </div>
 
           </div>
-          <!-- action="/" method="/" action="assets/src/email.controller.php" -->
+   
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <div id="error"></div>
             <form action="/" method="/" id="form" role="form" class="php-email-form">
@@ -420,33 +429,12 @@
   <footer id="footer">
     <div class="container">
       <div class="credits">
-        &copy; Designed by <a href="https://www.facebook.com/jerome.avecilla24">Jerome Avecilla</a>
+        &copy; Personal Portfolio | <a href="https://www.facebook.com/jerome.avecilla24" target="_blank">Jerome Avecilla</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div class="modal-handler">
-    <div id="readMore" class="modal fade" role="dialog"><br/><br/><br/>
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" style="background: transparent; border: none;">
-              <i class="bi bi-x-lg"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <center>
-              <h4 class="text-center text-danger">OOPSS!</h4>
-              <img src="assets/img/underdevelopment.png" width=300 class="img-responsive"/>
-              <h5 class="text-danger text-center">THIS SYSTEM IS UNDER DEVELOPMENT.</h5>
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Vendor JS Filess -->
   <script src="src/assets/purecounter/purecounter_vanilla.js"></script>
