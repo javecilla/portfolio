@@ -1,37 +1,11 @@
 git status
 git add .
 
-git commit -m "Added Inventory System Project"
+git commit -m "fcommit"
 
-git push https://github.com/javecilla/InventorySystem.git
+git push https://github.com/javecilla/portfolio.git
 
-Account Token -> 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
-
-Second Token: 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
-
-Third Token: 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
-
-Final Token: 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
-
-1st: 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
-
-2nd: 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
-
-3rd: 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
-
-4th: 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
-
-5th: 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
-
-6th: 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
-
-7th: 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
-
-8th: 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
-
-9th: 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
-
-git remote add origin https://github.com/javecilla/SchoolActivity.git
+git remote add origin https://github.com/javecilla/portfolio.git
 git push -u origin master
 git pull --rebase origin master
 git log
