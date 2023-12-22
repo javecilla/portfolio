@@ -1,455 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-type" content="text/html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <meta name="bingbot" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-  <meta content="Portfolio" name="description"/>
-  <meta content="Jerome Avecilla" name="author">
-  <meta property="og:image" src="storage/images/favicon.jpg" />
-  <meta property="og:image:width" content="608"/>
-  <meta property="og:image:height" content="260"/>
-  <meta property="og:image:alt" content="Jerome Avecilla | Portfolio" />
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="description" content="Jerome Avecilla - Personal Portfolio" />
+	<meta name="abstract" content="Jerome Avecilla - Portfolio"  />
+  <meta name="copyright" content="Jerome Avecilla"  />
+  <meta name='Classification' content='Portfolio'/>
+  <meta name='identifier-URL' content='https://javecilla.vercel.app/'/>
+  <meta name="msapplication-TileImage" content="assets/images/favicon.png" />
+  <!--<meta author='Jerome Avecilla' content='Developer: https://javecilla.vercel.app'/>-->
+  <!--The SEO Framework by Jerome Avecilla -->
+  <meta property="article:author" content="https://www.facebook.com/jerome.avecilla24"/>
+  <meta property="article:publisher" content="https://www.facebook.com/jerome.avecilla24"/>
+  <meta property="og:image" content="assets/images/ogimage.jpg" />
+  <meta property="og:image:width" content="608">
+  <meta property="og:image:height" content="260">
+  <meta property="og:image:alt" content="Jerome's Portfolio" />
+  <meta property="og:image:secure_url" content="assets/images/favicon.png"/>
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+ 	<meta property="og:title" content="Jerome Avecilla - Portfolio" />
+  <meta property="og:description" content="Jerome Avecilla - Personal Portfolio" />
+  <meta property="og:url" content="https://javecilla.vercel.app/" />
+  <meta property="og:site_name" content="Jerome Avecilla - Portfolio"/>
 
-  <title>Jerome Avecilla | Portfolio</title>
+	<title>Jerome Avecilla | Portfolio</title>
 
-  <link rel="shortcut icon" type="image/png" sizes="16x16" href="storage/images/favicon.png" />
-  <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="storage/images/favicon.png" />
+	<link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/images/favicon.png" />
+	<link rel="apple-touch-icon" type="image/png" sizes="16x16"  href="assets/images/favicon.png" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel='dns-prefetch' href='https://fonts.googleapis.com' />
-  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
-  <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap" defer/>
 
-  <link href="src/assets/fontawesome/css/all.min.css" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="src/assets/aos/aos.css" rel="stylesheet">
-  <link href="src/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="src/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="src/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="src/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="src/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="src/assets/plugins/css/sweetalert.css" rel="stylesheet" >
-  <!--Main CSS File -->
-  <link href="src/custom/stylesheet/style.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/libs/jquery@3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/libs/bootstrap@5.3.2/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="assets/libs/fontawesome@6.0/css/all.min.css"/>
+	<link rel="stylesheet" href="assets/libs/sweetalert2@11/dist/sweetalert2.min.css"/>
+	<link rel="stylesheet" href="assets/libs/wow/wow.min.css"/>
 
-  <style type="text/css">
-    
-  </style>
+	<link rel="stylesheet" href="assets/custom/stylesheets/app.css?v1.2"/>
 </head>
-
 <body>
+	<div class="sticky_top">	
+		<header id="header" class="header">
+			<div class="header_container ">
+				<div class="container">
+		      <div class="row">
+			      <div class="col-md-6 d-none d-lg-inline ">
+			        <div class="d-flex">
+			          <a href="tel:+639772565533" class="d-none d-lg-inline header_link">
+			            <small><i class="fa-solid fa-phone"></i>&nbsp;
+			              	(+63) 977 2465 533
+			              </small>
+			            </a>&nbsp;&nbsp;&nbsp;
+			            <a href="mailto:jeromesavc@gmail.com" class="ml-10 d-none d-lg-inline header_link">
+			              <small><i class="fa-solid fa-envelope"></i>&nbsp;
+			              	jeromesavc@gmail.com
+			              </small>
+			            </a>
+			          </div>
+			        </div>
+			        <div class="container col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+			          <div class="d-flex">
+			            <a href="http://www.facebook.com/jerome.avecilla24?mibextid=ZbWKwLJerome%20Avecilla" target="_blank"
+			            	class="header_link">
+			              <small><i class="fa-brands fa-facebook-f"></i></small>
+			            </a>&nbsp;&nbsp;
+			            <a href="https://github.com/javecilla/" target="_blank"
+			            	class="ml-10 header_link">
+			              <small><i class="fa-brands fa-github"></i></small>
+			            </a>&nbsp;&nbsp;
+			            <a href="javascript:void(0)" target="_blank"
+			            	class="ml-10 header_link">
+			              <small><i class="fa-brands fa-linkedin-in"></i></small>
+			            </a>&nbsp;&nbsp;
+			            <a href="mailto:jeromesavc@gmail.com"
+			            	class="d-lg-none ml-10 header_link">
+			              <small><i class="fa-solid fa-envelope"></i></small>
+			            </a>&nbsp;&nbsp;
+			            <a href="tel:+639772565533"
+			            	class="d-lg-none ml-10 header_link">
+			              <small><i class="fa-solid fa-phone"></i></small>
+			            </a>
+			          </div>
+			        </div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+	
+		<nav class="navbar navbar-expand-lg navbar-dark bg-white" aria-label="Main navigation">
+		  <div class="container">
+		    <a class="navbar-brand" href="https://javecilla.vercel.app/" title="Jerome Avecilla">
+		    	<img src="assets/images/favicon.png" alt="logo" width="55" height="55" />
+		    </a>
+		    <div class="d-flex align-items-center d-block d-sm-none">
+		    	<a href="#" class="btn btn-ligth btn-sm outline_button">
+		    		<i class="fa-solid fa-paper-plane"></i> Message
+		    	</a>
+		    	<a href="#" class="btn btn-ligth btn-sm fill_button">
+		    		<i class="fa-solid fa-file-arrow-down"></i> Resume
+		    	</a>
+		    </div>
+	    	<label class="navbar-toggler" for="navbarSideCollapse"
+	          aria-label="Toggle navigation">
+	        <input type="checkbox" class="navcheckbox" id="navbarSideCollapse"/>
+	  		  <div class ="bar">
+	  		    <span class="top"></span>
+	  		    <span class="mid"></span>
+	  		    <span class="bot"></span>
+	  		  </div>
+	     	</label>
+			  <div class="navbar-collapse offcanvas-collapse bg-white" id="navbarsExampleDefault">
+			    <ul class="navbar-nav me-auto mb-lg-0 d-flex align-items-center">
+			      <li class="nav-item nav_link">
+			        <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+			      </li>
+			      <li class="nav-item nav_link">
+			        <a class="nav-link text-dark" aria-current="page" href="#">About Me</a>
+			      </li>
+			      <li class="nav-item nav_link">
+			         <a class="nav-link text-dark" aria-current="page" href="#">Projects</a>
+			      </li>
+			      <li class="nav-item nav_link">
+			        <a class="nav-link text-dark" aria-current="page" href="#">Contact</a>
+			      </li>
+			    </ul>
+			    <div class="d-flex d-none d-lg-inline" >
+			      <a href="#" class="btn btn-ligth btn-sm outline_button">
+			    		<i class="fa-solid fa-paper-plane"></i> Message
+			    	</a>
+			    	<a href="#" class="btn btn-ligth btn-sm fill_button">
+			    		<i class="fa-solid fa-file-arrow-down"></i> Resume
+			    	</a>
+			    </div>
+			  </div>
+	 		</div>
+		</nav>
+	</div>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+	<main id="main" class="main">
+		<section id="hero" class="col-xxl-8 mt-5 text-center text-lg-start container">
+			<div class="row flex-lg-row-reverse d-flex align-items-center justify-content-center">
+			  <div class="col-10 col-sm-8 col-lg-6">
+			    <img src="assets/images/hero.PNG" class="d-block mx-lg-auto img-fluid moving_image" id="img"
+			      alt="Golden Minds Student Hero" width="500" height="400" loading="lazy"
+			    />
+			  </div>
+			  <div class="col-lg-6 mt-3">
+			    <h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">
+				    Hello<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" alt="Wave GIF" class="wave_gif"/> I'm Jerome
+					</h1>
+			    <p class="lead description_text">
+			    	<span class="wow fadeInUp">
+			    		Currently first-year college Bachelor of Science in Information Technology (BSIT) student with a strong aspiration to become a proficient Web Developer. My dedication lies in web development, and I am committed to refining my skills in this field.
+			    	</span>
+			    </p>
+			    <a href="javascript:void(0)" class="btn fill_button mb-2 wow fadeInUp">
+			    	<i class="fa-solid fa-arrow-right"></i>&nbsp; Let's Connect
+			    </a>
+			  </div>
+			</div>
+		</section>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+		<section class="bg-white">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f3f2" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+			<div class="container">
+				<div id="s2_content" class="row row-cols-1 row-cols-md-2 align-items-md-center ">
+		      <div class="col d-flex flex-column align-items-start gap-2">
+		      	<img src="assets/images/section1.png" class="img-fluid mb-3 moving_image s3_image"
+			          alt="img" width="500" height="400" loading="lazy"
+			        />
+		      </div>
+		      <div class="col">
+		        <p class="lead description_text">
+				    	<span class="wow fadeInUp">
+				    		With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2020, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
+				    	</span>
+				    </p>
+		      </div>
+		      <div class="col">
+		      	<div class="s2_context">
+			      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">About Me</h1>
+			        <p class="lead description_text">
+					    	<span class="wow fadeInUp">
+					    		I'm <i>Jerome Avecilla</i>, a 19-year-old pursuing a BSIT. Passionate about technology and coding, I'm dedicated to mastering web development. Currently in my first year, I'm working as a Junior Developer at <i><a href="#" class="text-decoration-none text-muted">@Golden Minds Colleges</a></i> while actively freelancing. I am dedicated to continuously learning and growing in the field.
+					    	</span>
+					    </p>
+				    </div>
+		      </div>
+		      <div class="col">
+		      	<div class="mt-3">
+				    	<img src="assets/images/section2.png" class="img-fluid mb-3 moving_image s2_image"
+			          alt="img" width="500" height="400" loading="lazy"
+			        />
+				    </div>
+				  <div>
+		    </div>
+	    </div>
+		</section>
 
-      <div class="profile">
-        <img src="storage/images/sidebar2.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a onclick="location.reload();" class="dev_name">Jerome Avecilla</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/itsjzerome_" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/jerome.avecilla24" target="_blank" class="facebook">
-            <i class="bx bxl-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/_jzerome/" target="_blank" class="instagram">
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="https://github.com/javecilla" target="_blank" class="google-plus"><i class="bx bxl-github"></i></a>
-        </div>
-      </div>
+		<section>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+			<div class="container">
+				<div id="s3_content" class="d-flex align-items-center justify-content-center align-items-md-center ">
+					<div>
+			      <h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Achievements</h1>
+			      <p class="lead description_text">
+					    <span class="wow fadeInUp">
+					    	Delve into my noteworthy accomplishments as a dedicated BSIT student, showcasing achievements aligned with my journey in the realm of technology and innovation. From academic milestones to impactful projects, explore my endeavors that reflect my passion and commitment to excelling in the field.
+					    </span>
+					  </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 mb-2">
+						<div class="featured-carousel owl-carousel">
+							<div class="item wow fadeInUp">
+								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+									style="background-image: url('assets/images/achievements/a1/h1.jpg'); height: 60vh;">
+			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+			          		<div class="gallery_content">
+				            	<h3 class="display-7 lh-1 fw-bold">
+				            		BulSU 13th IT Congress - Champion Hackathon Competition
+				            	</h3>
+				            	<p class="text-white">
+				            		The Side Events portion of the IT Congress is a dedicated segment...
+				            	</p>
+				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+						        </div>
+			          	</div>
+	        			</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-2">
+						<div class="featured-carousel owl-carousel">
+							<div class="item wow fadeInUp">
+								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+									style="background-image: url('assets/images/achievements/a2/h1.jpg'); height: 60vh;">
+			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+			          		<div class="gallery_content">
+				            	<h3 class="display-7 lh-1 fw-bold">
+				            		SHS Graduation S.Y 2022-2023 - Graduated as With High Honor
+				            	</h3>
+				            	<p class="text-white">
+				            		The Graduation Day on my Senior High School Grade 12 as Information...
+				            	</p>
+				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+						        </div>
+			          	</div>
+	        			</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-2">
+						<div class="featured-carousel owl-carousel">
+							<div class="item wow fadeInUp">
+								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+									style="background-image: url('assets/images/achievements/a3/h1.jpg'); height: 60vh;">
+			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+			          		<div class="gallery_content">
+				            	<h3 class="display-7 lh-1 fw-bold">
+				            		Grade 12 ICT SHS - Recieve as Best Thesis for Research and Innovation
+				            	</h3>
+				            	<p class="text-white">
+				            		Recieving an Awards as Best Thesis of the Year among GMC students...</p>
+				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+						        </div>
+			          	</div>
+	        			</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</section>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+		<section class="bg-white">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f3f2" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+			<div class="container">
+				<div id="s4_content" class="row row-cols-1 row-cols-md-2 align-items-md-center">
+					<div class="col d-flex flex-column align-items-start gap-2">
+		      	<img src="assets/images/section3.png" class="img-fluid mb-3 moving_image s3_image"
+			        alt="img" width="500" height="400" loading="lazy"
+			      />
+		      </div>
+		      <div class="col">
+		      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Tech Stacks and Tools</h1>
+		        <p class="lead description_text">
+				    	<span class="wow fadeInUp">
+				    		I'm thrilled to share my web development tech stack and skills. With ongoing learning and a passion for innovation, I continuously expand my knowledge to improve my skills and stay ahead of industry trends.
+				    	</span>
+				    </p>
+		      </div>
+				</div>
+				<div class="row">
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="75" height="75"
+						title="HTML5"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="75" height="75"
+						title="CSS3"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="rounded-4" alt="js" width="75" height="75"
+						title="JavaScript"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="75" height="75"
+						title="Bootstrap"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" alt="jquery" width="75" height="75"
+						title="jQuery"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="75" height="75"
+						title="PHP"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://www.vultr.com/marketplace-assets/vultr-1-click-cpanel-color-large.svg" alt="controlpanel" width="75" height="75"
+						title="Control Panel"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="75" height="75"
+						title="MySQL"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://github.githubassets.com/favicons/favicon.svg" alt="github" width="75" height="75"
+						title="GitHub"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="85" height="75"
+						title="GIT"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="75" height="75"
+						title="Laravel"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://img.freepik.com/premium-vector/seo-search-engine-optimization-minimal-flat-logo-vector-seo-logo-with-magnifying-glass-arrow_664675-1298.jpg" class="rounded-4" alt="seo" width="75" height="75"
+						title="Search Engine Optimization(SEO)"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg" class="rounded-4" alt="api" width="75" height="75"
+						title="Application Programming Interface(API)"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://vuejs.org/logo.svg" alt="vuejs" width="75" height="75"
+						title="Vue JS"/> 
+					</div>
+					<div class="col-auto mt-2">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png" alt="npm" width="100" height="75"
+						title="NPM"/> 
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 align-items-md-center">
+		      <div class="col">
+		      	<div class="s4_context">
+			      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Experiences</h1>
+			        <p class="lead description_text">
+					    	<span class="wow fadeInUp">
+					    		I'm excited to dive into my journey and share my experience in web development, from deploying projects to production and crafting engaging user experiences.
+					    	</span>
+					    </p>
+					    <div class="theme_accordion accordion accordion-flush" id="myExperiences">
+					    	<div class="theme_accordion_item wow fadeInUp">
+		              <h2 class="theme_accordion_header">
+		                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="flush-collapseOne">
+		                  Education
+		                </button>
+		              </h2>
+		              <div id="education" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
+		                <div class="accordion-body">
+		                  <p class="description_text">
+									    	<span class="wow fadeInUp">
+									    		...
+									    	</span>
+									    </p>
+		                </div>
+		              </div>
+            		</div>
+            		<div class="theme_accordion_item wow fadeInUp mt-2">
+		              <h2 class="theme_accordion_header">
+		                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false" aria-controls="flush-collapseOne">
+		                  Work
+		                </button>
+		              </h2>
+		              <div id="work" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
+		                <div class="accordion-body">
+		                  <p class="description_text">
+									    	<span class="wow fadeInUp">
+									    		...
+									    	</span>
+									    </p>
+		                </div>
+		              </div>
+            		</div>
+					    </div>
+				    </div>
+		      </div>
+		      <div class="col d-flex flex-column align-items-start gap-2">
+		      	<img src="assets/images/section4.PNG" class="img-fluid mb-3 moving_image s4_image d-none d-lg-inline"
+			          alt="img" width="500" height="400" loading="lazy"
+			        />
+		      </div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+			<div class="container">
+				<div id="s5_content" class="d-flex align-items-center justify-content-center align-items-md-center ">
+					<div>
+			      <h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Projects</h1>
+			      <p class="lead description_text">
+					    <span class="wow fadeInUp">
+					    	Displayed below are my diverse portfolio of projects, including academic, personal, and large-scale endeavors. Take a closer look to witness my range of skills and expertise. 
+					    </span>
+					  </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-2">
+						<div class="card shadow-sm">
+            	<img src="assets/images/projects/admission/p1.jpg" alt="project"
+            		class="bd-placeholder-img card-img-top" width="100%" height="300"
+            	/>
+            	<div class="card-body">
+              	<p class="card-text">
+              		The Online Admission project for Golden Minds Colleges simplifies enrollment by allowing applicants to enroll digitally. Upon successful enrollment,the system automates the scheduling of appointments for the of required documents, streamlining and organizing the admission process...
+              	</p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                  <button type="button" class="btn btn-sm outline_button">
+	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+	                  </button>
+	                </div>
+	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
+	              </div>
+            	</div>
+          	</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="card shadow-sm">
+            	<img src="assets/images/projects/websystem/p1.PNG" alt="project"
+            		class="bd-placeholder-img card-img-top" width="100%" height="300"
+            	/>
+            	<div class="card-body">
+              	<p class="card-text">
+              		The Web-System project for Golden Minds Colleges involved a comprehensive revamp of their existing website system. The initiative aimed to modernize and enhance the user experience by migrating to Laravel and implementing a complete overhaul of the UI/UX design...
+              	</p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                  <button type="button" class="btn btn-sm outline_button">
+	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+	                  </button>
+	                </div>
+	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
+	              </div>
+            	</div>
+          	</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="card shadow-sm">
+            	<img src="assets/images/projects/vs/p1.jpg" alt="project"
+            		class="bd-placeholder-img card-img-top" width="100%" height="300"
+            	/>
+            	<div class="card-body">
+              	<p class="card-text">
+              		The Online Voting System for Golden Minds Colleges' Lakan, Lakambini, and Lakandyosa 2023 is a user-friendly web-based platform designed to facilitate voting for the esteemed...
+              	</p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                  <button type="button" class="btn btn-sm outline_button">
+	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+	                  </button>
+	                </div>
+	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
+	              </div>
+            	</div>
+          	</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="card shadow-sm">
+            	<img src="assets/images/projects/ims/p1.PNG" alt="project"
+            		class="bd-placeholder-img card-img-top" width="100%" height="300"
+            	/>
+            	<div class="card-body">
+              	<p class="card-text">
+              		The Inventory System is a thesis for Senior High School - Golden Minds Colleges Sta. Maria Campus, Bulacan in partial fullfillment under the requirements of Information and...
+              	</p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                   <button type="button" class="btn btn-sm outline_button">
+	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+	                  </button>
+	                </div>
+	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
+	              </div>
+            	</div>
+          	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white ">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f3f2" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+			<div class="container">
+				<div id="s4_content" class="row row-cols-1 row-cols-md-2 align-items-md-center">
+					<div class="col d-flex flex-column align-items-start gap-2 mb-2">
+		      	<img src="assets/images/section5.png" class="img-fluid mb-3 moving_image s3_image"
+			        alt="img" width="500" height="400" loading="lazy"
+			      />
+			      <h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Contact Me</h1>
+		        <p class="lead description_text">
+				    	<span class="wow fadeInUp">
+				    		To ensure a seamless experience, I welcome any feedback or concerns regarding my portfolio. Please feel free to contact me via email, and I will respond promptly to address any questions or feedback you may have.
+				    	</span>
+				    </p>
+		      </div>
+		      <div class="col mb-2">
+						<form method="POST" action="/" id="form" class="p-1 p-md-5  rounded-3 bg-body-tertiary ">
+							<div class="form-floating mb-3">
+		            <input type="text" class="form-control" id="name" placeholder="itsmejerome"/>
+		            <label for="name">Your Name</label>
+		          </div>
+		          <div class="form-floating mb-3">
+		            <input type="email" class="form-control" id="email" placeholder="name@example.com"/>
+		            <label for="email">Your Email</label>
+		          </div>
+		          <div class="form-floating mb-3">
+		            <input type="text" class="form-control" id="subject" placeholder="mysubject"/>
+		            <label for="subject">Subject</label>
+		          </div>
+		          <div class="form-floating mb-3">
+		          	<textarea class="form-control" name="message" id="message" rows="10" placeholder="mymessage" style="height: 120px"></textarea>
+		            <label for="message">Message</label>
+		          </div>
+		          <hr class="my-4 text-muted">
+          		<button class="w-100 btn fill_button" type="button">Submit</button>
+        		</form>
+		      </div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-white border-top">
+		<div class="container">
+			<div class="d-flex flex-wrap justify-content-between align-items-center">
+		    <div class="col-md-4 d-flex align-items-center mt-3 mb-2">
+		      <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Jerome Avecilla</span>
+		    </div>
+		    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mt-3 mb-2">
+		      <li class="ms-2"><a class="text-muted" href="http://www.facebook.com/jerome.avecilla24?mibextid=ZbWKwLJerome%20Avecilla" target="_blank">
+		      	<i class="fa-brands fa-facebook-f"></i>
+		      </a></li>
+		      <li class="ms-2"><a class="text-muted" href="https://github.com/javecilla/" target="_blank">
+		      	<i class="fa-brands fa-github"></i>
+		      </a></li>
+		      <li class="ms-2"><a class="text-muted" href="javascript:void(0)" target="_blank">
+		      	<i class="fa-brands fa-linkedin-in"></i>
+		      </a></li>
+		      <li class="ms-3"><span class="text-muted">v1.2</span></li>
+		    </ul>
+  		</div>
+		</div>
+	</footer>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center" 
-  style="width: 100%; height: 100vh; background: url('storage/images/home.jpg') top center;
-  background-size: cover;">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Welcome!</h1>
-      <p>Hi, i'm <span class="typed" data-typed-items="Jerome Avecilla"></span></p>
-    </div>
-  </section><!-- End Hero -->
+	<script type="text/javascript" src="assets/libs/bootstrap@5.3.2/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="assets/libs/fontawesome@6.0/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/libs/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+	<script type="text/javascript" src="assets/libs/wow/wow.min.js"></script>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p class="paragraph_text">
-            I am currently a first-year Bachelor of Science in Information Technology (BSIT) student. With a background in Senior High School ICT studies. I have developed a strong passion for the technology industry. My primary focus lies in web development, and I am dedicated to honing my skills in this field. I am pursuing a degree in Information Technology (IT) to further enhance my knowledge and expertise, as I strive to establish a successful career in the technology sector.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="storage/images/javecilla3.jpg" class="img-fluid card-img-top" alt="">
-          </div>
-
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Personal Information</h3>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>24 March 2004</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jeromesavc@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+63) 977 246 5533</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>Mapulang Lupa, Pandi, Bulacan</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19 y/o</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Course:</strong> <span>Bachelor of Science in Information Technology (BSIT)</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Year:</strong> <span>1st</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul> 
-            </div>
-          </div>
-          <p class="paragraph_text">
-            As a passionate coder, I invest a considerable amount of time honing my skills and expanding my knowledge in various aspects of web development. Since embarking on my journey in 2020, I have become proficient in HTML, CSS, and JavaScript. I am dedicated to continuously learning and growing in the field, and am excited to bring my expertise to your project.
-          </p>
-        </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-  <!-- ======= Skills Section ======= -->
-  <section id="skills" class="skills section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-        <p class="paragraph_text" style="text-align: justify;">
-          I'm thrilled to share my web development tech stack and skills. With ongoing learning and a passion for innovation, I continuously expand my knowledge to improve my skills and stay ahead of industry trends.
-          </p>
-        </div>
-        <!-- #Row for Programming Skills-->
-        <div class="row skills-content">
-          <h5 class="mb-4">Programming Skills</h5>
-          <!-- #Column for Front-End Skills -->
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Jquery <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Bootstrap <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-          <!-- #Column for Back-End Skills -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="progress">
-              <span class="skill">PHP (OOP, PDO, MVC) <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">AJAX<i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">MySQL/DBMS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Api<i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Git <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="row skills-content">
-          <!-- #Column for Software Skills-->
-          <div class="col-lg-6" data-aos="fade-right">
-            <h5 class="mb-4">Technical / Computer Skills</h5>
-            <ul>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>MS Office:</strong> 
-                <span>Word, Powerpoint, Excel, Access</span>
-              </li>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>Google:</strong> 
-                <span>Docs, Slides</span>
-              </li>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> <strong>Computer Service:</strong> <span>Troubleshooting, Networking</span></li>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> <strong>Editing:</strong> <span>Photoshop</span></li>
-            </ul>
-          </div>
-          <!-- #Column for Professional Skills-->
-          <div class="col-lg-6" data-aos="fade-left">
-            <h5 class="mb-4">Professional Skills</h5>
-            <ul>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>Character Execellence</strong> 
-              </li>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>Team Leader</strong> 
-              </li>
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>Detail Oriented </strong> 
-              <li style="list-style-type: none; margin-bottom: 15px;"><i class="bi bi-chevron-right"></i> 
-                <strong>Communication Skills</strong>             
-              </ul>
-          </div>
-        </div>
-
-      </div>
-  </section>
-  <!-- ======= End Skills ======= -->
-
-  <!-- ======= Portfoliod Projects Section ======= -->
-  <section id="portfolio" class="portfolio section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-        <p style="text-align: justify;">
-          Displayed below are my diverse portfolio of projects, including academic, personal, and large-scale endeavors. Take a closer look to witness my range of skills and expertise.
-        </p>
-      </div>
-
-      <div class="row" data-aos="fade-up">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web">Web</li>
-            <li data-filter=".filter-app">App</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="card">
-            <div class="card-header dropdown p-0">
-              <button class="btn float-end "
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                role="button">
-                <i class="fas fa-ellipsis-h fs-5"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">View Live</a></li>
-                <li><a class="dropdown-item" href="#">Read More</a></li>
-              </ul>
-            </div>
-            <img src="storage/images/projects/ims/ims.png" class="img-fluid card-img-top" alt="IMS Logo">
-            <div class="card-body details"> 
-              <p style="text-align: justify;">
-                This software Inventory Management System (IMS) is comprehensive project aimed at managing the inventory of tools and equipment.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="card ">
-            <div class="card-header dropdown p-0">
-              <button class="btn float-end "
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                role="button">
-                <i class="fas fa-ellipsis-h fs-5"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">View Live</a></li>
-                <li><a class="dropdown-item" href="#">Read More</a></li>
-              </ul>
-            </div>
-            <img src="storage/images/projects/vs/vs.png" class="img-fluid card-img-top" alt="IMS Logo">
-            <div class="card-body details border-0"> 
-              <p style="text-align: justify;">
-                This Voting System (VS) is a software platform that allows groups to securely conduct votes and elections. High-quality online voting systems balance ballot security, accessibility, and the overall requirements of an organization's voting event.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="card ">
-            <div class="card-header dropdown p-0">
-              <button class="btn float-end "
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                role="button">
-                <i class="fas fa-ellipsis-h fs-5"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">View Live</a></li>
-                <li><a class="dropdown-item" href="#">Read More</a></li>
-              </ul>
-            </div>
-            <img src="storage/images/projects/cms/cms.png" class="img-fluid card-img-top" alt="IMS Logo">
-            <div class="card-body details border-0"> 
-              <p style="text-align: justify;">
-                This software Content Management System (CMS) is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section> <!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>
-            To ensure a seamless experience, I welcome any feedback or concerns regarding my portfolio. Please feel free to contact me via email, and I will respond promptly to address any questions or feedback you may have.
-          </p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>jeromesavc@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>(+63) 977 2465 533</p>
-              </div>
-
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Mapulang Lupa, Pandi, Bulacan, Philippines</p>
-              </div>
-              <div class="card">
-
-                <iframe src="https://www.google.com/maps/d/embed?mid=1mXw5Y1QhSR6ZCckt4ZTAbzlzqJO6w8A&ehbc=2E312F" width="640" height="300" class="card-img-top"></iframe>
-              </div>
-
-            </div>
-
-          </div>
-   
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <div id="error"></div>
-            <form action="/" method="/" id="form" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject">
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="10"></textarea>
-              </div>
-              <div class="text-center"><button type="submit" id="submit" disabled
-              style="cursor: no-drop;">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="credits">
-        &copy; Personal Portfolio | <a href="https://www.facebook.com/jerome.avecilla24" target="_blank">Jerome Avecilla</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Filess -->
-  <script src="src/assets/purecounter/purecounter_vanilla.js"></script>
-  <script src="src/assets/aos/aos.js"></script>
-  <script src="src/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="src/assets/glightbox/js/glightbox.min.js"></script>
-  <script src="src/assets/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="src/assets/swiper/swiper-bundle.min.js"></script>
-  <script src="src/assets/typed.js/typed.min.js"></script>
-  <script src="src/assets/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Main JS File -->
-  <script src="src/custom/script/main.js"></script>
+	<script type="text/javascript" src="assets/custom/scripts/app.js?v1.2"></script>
 </body>
-
 </html>
