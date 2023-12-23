@@ -2,9 +2,6 @@
   "use strict";
 
   // Menu bar toggle
-  $(document).on('click', '#navbarSideCollapse', function(e) {
-   	e.preventDefault();
-    $('.offcanvas-collapse').toggleClass('open');
-  });
+  $(document).on('click', '#burgerBarMenu', () => { $('#navbarsMenu').toggleClass('open'); });
 
 })(jQuery);

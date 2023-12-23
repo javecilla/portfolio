@@ -101,24 +101,16 @@
 		    <a class="navbar-brand" href="https://javecilla.vercel.app/" title="Jerome Avecilla">
 		    	<img src="assets/images/favicon.png" alt="logo" width="55" height="55" />
 		    </a>
-		    <div class="d-flex align-items-center d-block d-sm-none">
-		    	<a href="#" class="btn btn-ligth btn-sm outline_button">
-		    		<i class="fa-solid fa-paper-plane"></i> Message
-		    	</a>
-		    	<a href="#" class="btn btn-ligth btn-sm fill_button">
-		    		<i class="fa-solid fa-file-arrow-down"></i> Resume
-		    	</a>
-		    </div>
-	    	<label class="navbar-toggler" for="navbarSideCollapse"
+	    	<label class="navbar-toggler" for="burgerBarMenu"
 	          aria-label="Toggle navigation">
-	        <input type="checkbox" class="navcheckbox" id="navbarSideCollapse"/>
+	        <input type="checkbox" class="navcheckbox" id="burgerBarMenu"/>
 	  		  <div class ="bar">
 	  		    <span class="top"></span>
 	  		    <span class="mid"></span>
 	  		    <span class="bot"></span>
 	  		  </div>
 	     	</label>
-			  <div class="navbar-collapse offcanvas-collapse bg-white" id="navbarsExampleDefault">
+			  <div class="navbar-collapse offcanvas-collapse bg-white" id="navbarsMenu">
 			    <ul class="navbar-nav me-auto mb-lg-0 d-flex align-items-center">
 			      <li class="nav-item nav_link">
 			        <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
@@ -164,7 +156,7 @@
 			    	</span>
 			    </p>
 			    <a href="javascript:void(0)" class="btn fill_button mb-2 wow fadeInUp">
-			    	<i class="fa-solid fa-arrow-right"></i>&nbsp; Let's Connect
+			    	<i class="fa-solid fa-file-arrow-down"></i>&nbsp; Resume
 			    </a>
 			  </div>
 			</div>
@@ -175,30 +167,32 @@
 			<div class="container">
 				<div id="s2_content" class="row row-cols-1 row-cols-md-2 align-items-md-center ">
 		      <div class="col d-flex flex-column align-items-start gap-2">
-		      	<img src="assets/images/section1.png" class="img-fluid mb-3 moving_image s3_image"
+		      	<img src="assets/images/section1.png" class="img-fluid mb-3 moving_image s2_image"
 			          alt="img" width="500" height="400" loading="lazy"
 			        />
 		      </div>
 		      <div class="col">
-		        <p class="lead description_text">
-				    	<span class="wow fadeInUp">
-				    		With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2020, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
-				    	</span>
-				    </p>
-		      </div>
-		      <div class="col">
 		      	<div class="s2_context">
-			      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">About Me</h1>
+		      		<h1 class="display-5 fw-bold lh-1 mt-3 mb-3 gradient_header">About Me</h1>
 			        <p class="lead description_text">
 					    	<span class="wow fadeInUp">
 					    		I'm <i>Jerome Avecilla</i>, a 19-year-old pursuing a BSIT. Passionate about technology and coding, I'm dedicated to mastering web development. Currently in my first year, I'm working as a Junior Developer at <i><a href="#" class="text-decoration-none text-muted">@Golden Minds Colleges</a></i> while actively freelancing. I am dedicated to continuously learning and growing in the field.
 					    	</span>
 					    </p>
+					  </div>
+		      </div>
+		      <div class="col">
+		      	<div class="s22_context">
+			      	<p class="lead description_text">
+					    	<span class="wow fadeInUp">
+					    		With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2020, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
+					    	</span>
+				    	</p>
 				    </div>
 		      </div>
 		      <div class="col">
 		      	<div class="mt-3">
-				    	<img src="assets/images/section2.png" class="img-fluid mb-3 moving_image s2_image"
+				    	<img src="assets/images/section2.png" class="img-fluid mb-3 moving_image s22_image"
 			          alt="img" width="500" height="400" loading="lazy"
 			        />
 				    </div>
@@ -220,63 +214,65 @@
 					  </p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 mb-2">
-						<div class="featured-carousel owl-carousel">
-							<div class="item wow fadeInUp">
-								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-									style="background-image: url('assets/images/achievements/a1/h1.jpg'); height: 60vh;">
-			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
-			          		<div class="gallery_content">
-				            	<h3 class="display-7 lh-1 fw-bold">
-				            		BulSU 13th IT Congress - Champion Hackathon Competition
-				            	</h3>
-				            	<p class="text-white">
-				            		The Side Events portion of the IT Congress is a dedicated segment...
-				            	</p>
-				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
-						        </div>
-			          	</div>
-	        			</div>
+				<div class="s3_context">
+					<div class="row">
+						<div class="col-md-4 mb-2">
+							<div class="featured-carousel owl-carousel">
+								<div class="item wow fadeInUp">
+									<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+										style="background-image: url('assets/images/achievements/a1/h1.jpg'); height: 60vh;">
+				          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+				          		<div class="gallery_content">
+					            	<h3 class="display-7 lh-1 fw-bold">
+					            		BulSU 13th IT Congress - Champion Hackathon Competition
+					            	</h3>
+					            	<p class="text-white">
+					            		The Side Events portion of the IT Congress is a dedicated segment...
+					            	</p>
+					            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+							        </div>
+				          	</div>
+		        			</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 mb-2">
-						<div class="featured-carousel owl-carousel">
-							<div class="item wow fadeInUp">
-								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-									style="background-image: url('assets/images/achievements/a2/h1.jpg'); height: 60vh;">
-			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
-			          		<div class="gallery_content">
-				            	<h3 class="display-7 lh-1 fw-bold">
-				            		SHS Graduation S.Y 2022-2023 - Graduated as With High Honor
-				            	</h3>
-				            	<p class="text-white">
-				            		The Graduation Day on my Senior High School Grade 12 as Information...
-				            	</p>
-				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
-						        </div>
-			          	</div>
-	        			</div>
+						<div class="col-md-4 mb-2">
+							<div class="featured-carousel owl-carousel">
+								<div class="item wow fadeInUp">
+									<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+										style="background-image: url('assets/images/achievements/a2/h1.jpg'); height: 60vh;">
+				          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+				          		<div class="gallery_content">
+					            	<h3 class="display-7 lh-1 fw-bold">
+					            		SHS Graduation S.Y 2022-2023 - Graduated as With High Honor
+					            	</h3>
+					            	<p class="text-white">
+					            		The Graduation Day on my Senior High School Grade 12 as Information...
+					            	</p>
+					            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+							        </div>
+				          	</div>
+		        			</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 mb-2">
-						<div class="featured-carousel owl-carousel">
-							<div class="item wow fadeInUp">
-								<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-									style="background-image: url('assets/images/achievements/a3/h1.jpg'); height: 60vh;">
-			          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
-			          		<div class="gallery_content">
-				            	<h3 class="display-7 lh-1 fw-bold">
-				            		Grade 12 ICT SHS - Recieve as Best Thesis for Research and Innovation
-				            	</h3>
-				            	<p class="text-white">
-				            		Recieving an Awards as Best Thesis of the Year among GMC students...</p>
-				            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
-						        </div>
-			          	</div>
-	        			</div>
+						<div class="col-md-4 mb-2">
+							<div class="featured-carousel owl-carousel">
+								<div class="item wow fadeInUp">
+									<div class="gallery_card_bg card-cover border-0 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+										style="background-image: url('assets/images/achievements/a3/h1.jpg'); height: 60vh;">
+				          	<div class="d-flex flex-column h-100 p-2 pb-3 text-white text-shadow-1">
+				          		<div class="gallery_content">
+					            	<h3 class="display-7 lh-1 fw-bold">
+					            		Grade 12 ICT SHS - Recieve as Best Thesis for Research and Innovation
+					            	</h3>
+					            	<p class="text-white">
+					            		Recieving an Awards as Best Thesis of the Year among GMC students...</p>
+					            	<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i>&nbsp; Read More</button>
+							        </div>
+				          	</div>
+		        			</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -289,20 +285,22 @@
 			<div class="container">
 				<div id="s4_content" class="row row-cols-1 row-cols-md-2 align-items-md-center">
 					<div class="col d-flex flex-column align-items-start gap-2">
-		      	<img src="assets/images/section3.png" class="img-fluid mb-3 moving_image s3_image"
+		      	<img src="assets/images/section3.png" class="img-fluid mb-3 moving_image s4_image"
 			        alt="img" width="500" height="400" loading="lazy"
 			      />
 		      </div>
 		      <div class="col">
-		      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Tech Stacks and Tools</h1>
-		        <p class="lead description_text">
-				    	<span class="wow fadeInUp">
-				    		I'm thrilled to share my web development tech stack and skills. With ongoing learning and a passion for innovation, I continuously expand my knowledge to improve my skills and stay ahead of industry trends.
-				    	</span>
-				    </p>
+		      	<div class="s4_context">
+			      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Tech Stacks and Tools</h1>
+			        <p class="lead description_text">
+					    	<span class="wow fadeInUp">
+					    		I'm thrilled to share my web development tech stack and skills. With ongoing learning and a passion for innovation, I continuously expand my knowledge to improve my skills and stay ahead of industry trends.
+					    	</span>
+					    </p>
+				    </div>
 		      </div>
 				</div>
-				<div class="row">
+				<div class="row d-flex align-items-center justify-content-center text-center">
 					<div class="col-auto mt-2">
 						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="75" height="75"
 						title="HTML5"/> 
@@ -364,56 +362,58 @@
 						title="NPM"/> 
 					</div>
 				</div>
-				<div class="row row-cols-1 row-cols-md-2 align-items-md-center">
-		      <div class="col">
-		      	<div class="s4_context">
-			      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Experiences</h1>
-			        <p class="lead description_text">
-					    	<span class="wow fadeInUp">
-					    		I'm excited to dive into my journey and share my experience in web development, from deploying projects to production and crafting engaging user experiences.
-					    	</span>
-					    </p>
-					    <div class="theme_accordion accordion accordion-flush" id="myExperiences">
-					    	<div class="theme_accordion_item wow fadeInUp">
-		              <h2 class="theme_accordion_header">
-		                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="flush-collapseOne">
-		                  Education
-		                </button>
-		              </h2>
-		              <div id="education" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
-		                <div class="accordion-body">
-		                  <p class="description_text">
-									    	<span class="wow fadeInUp">
-									    		...
-									    	</span>
-									    </p>
-		                </div>
-		              </div>
-            		</div>
-            		<div class="theme_accordion_item wow fadeInUp mt-2">
-		              <h2 class="theme_accordion_header">
-		                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false" aria-controls="flush-collapseOne">
-		                  Work
-		                </button>
-		              </h2>
-		              <div id="work" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
-		                <div class="accordion-body">
-		                  <p class="description_text">
-									    	<span class="wow fadeInUp">
-									    		...
-									    	</span>
-									    </p>
-		                </div>
-		              </div>
-            		</div>
+				<div class="s5_content">
+					<div class="row row-cols-1 row-cols-md-2 align-items-md-center">
+			      <div class="col">
+			      	<div class="s5_context">
+				      	<h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Experiences</h1>
+				        <p class="lead description_text">
+						    	<span class="wow fadeInUp">
+						    		I'm excited to dive into my journey and share my experience in web development, from deploying projects to production and crafting engaging user experiences.
+						    	</span>
+						    </p>
+						    <div class="theme_accordion accordion accordion-flush" id="myExperiences">
+						    	<div class="theme_accordion_item wow fadeInUp">
+			              <h2 class="theme_accordion_header">
+			                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false" aria-controls="flush-collapseOne">
+			                  Education
+			                </button>
+			              </h2>
+			              <div id="education" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
+			                <div class="accordion-body">
+			                  <p class="description_text">
+										    	<span class="wow fadeInUp">
+										    		...
+										    	</span>
+										    </p>
+			                </div>
+			              </div>
+	            		</div>
+	            		<div class="theme_accordion_item wow fadeInUp mt-2">
+			              <h2 class="theme_accordion_header">
+			                <button class="theme_accordion_button accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#work" aria-expanded="false" aria-controls="flush-collapseOne">
+			                  Work
+			                </button>
+			              </h2>
+			              <div id="work" class="accordion-collapse collapse" data-bs-parent="#myExperiences">
+			                <div class="accordion-body">
+			                  <p class="description_text">
+										    	<span class="wow fadeInUp">
+										    		...
+										    	</span>
+										    </p>
+			                </div>
+			              </div>
+	            		</div>
+						    </div>
 					    </div>
-				    </div>
-		      </div>
-		      <div class="col d-flex flex-column align-items-start gap-2">
-		      	<img src="assets/images/section4.PNG" class="img-fluid mb-3 moving_image s4_image d-none d-lg-inline"
-			          alt="img" width="500" height="400" loading="lazy"
-			        />
-		      </div>
+			      </div>
+			      <div class="col d-flex flex-column align-items-start gap-2">
+			      	<img src="assets/images/section4.PNG" class="img-fluid mb-3 moving_image s5_image d-none d-lg-inline"
+				          alt="img" width="500" height="400" loading="lazy"
+				        />
+			      </div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -421,7 +421,7 @@
 		<section>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,101.3C672,107,768,149,864,160C960,171,1056,149,1152,122.7C1248,96,1344,64,1392,48L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 			<div class="container">
-				<div id="s5_content" class="d-flex align-items-center justify-content-center align-items-md-center ">
+				<div id="s6_content" class="d-flex align-items-center justify-content-center align-items-md-center ">
 					<div>
 			      <h1 class="display-5 fw-bold lh-1 mb-3 gradient_header">Projects</h1>
 			      <p class="lead description_text">
@@ -431,86 +431,88 @@
 					  </p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 mb-2">
-						<div class="card shadow-sm">
-            	<img src="assets/images/projects/admission/p1.jpg" alt="project"
-            		class="bd-placeholder-img card-img-top" width="100%" height="300"
-            	/>
-            	<div class="card-body">
-              	<p class="card-text">
-              		The Online Admission project for Golden Minds Colleges simplifies enrollment by allowing applicants to enroll digitally. Upon successful enrollment,the system automates the scheduling of appointments for the of required documents, streamlining and organizing the admission process...
-              	</p>
-	              <div class="d-flex justify-content-between align-items-center">
-	                <div class="btn-group">
-	                  <button type="button" class="btn btn-sm outline_button">
-	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
-	                  </button>
-	                </div>
-	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
-	              </div>
-            	</div>
-          	</div>
-					</div>
-					<div class="col-md-6 mb-2">
-						<div class="card shadow-sm">
-            	<img src="assets/images/projects/websystem/p1.PNG" alt="project"
-            		class="bd-placeholder-img card-img-top" width="100%" height="300"
-            	/>
-            	<div class="card-body">
-              	<p class="card-text">
-              		The Web-System project for Golden Minds Colleges involved a comprehensive revamp of their existing website system. The initiative aimed to modernize and enhance the user experience by migrating to Laravel and implementing a complete overhaul of the UI/UX design...
-              	</p>
-	              <div class="d-flex justify-content-between align-items-center">
-	                <div class="btn-group">
-	                  <button type="button" class="btn btn-sm outline_button">
-	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
-	                  </button>
-	                </div>
-	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
-	              </div>
-            	</div>
-          	</div>
-					</div>
-					<div class="col-md-6 mb-2">
-						<div class="card shadow-sm">
-            	<img src="assets/images/projects/vs/p1.jpg" alt="project"
-            		class="bd-placeholder-img card-img-top" width="100%" height="300"
-            	/>
-            	<div class="card-body">
-              	<p class="card-text">
-              		The Online Voting System for Golden Minds Colleges' Lakan, Lakambini, and Lakandyosa 2023 is a user-friendly web-based platform designed to facilitate voting for the esteemed...
-              	</p>
-	              <div class="d-flex justify-content-between align-items-center">
-	                <div class="btn-group">
-	                  <button type="button" class="btn btn-sm outline_button">
-	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
-	                  </button>
-	                </div>
-	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
-	              </div>
-            	</div>
-          	</div>
-					</div>
-					<div class="col-md-6 mb-2">
-						<div class="card shadow-sm">
-            	<img src="assets/images/projects/ims/p1.PNG" alt="project"
-            		class="bd-placeholder-img card-img-top" width="100%" height="300"
-            	/>
-            	<div class="card-body">
-              	<p class="card-text">
-              		The Inventory System is a thesis for Senior High School - Golden Minds Colleges Sta. Maria Campus, Bulacan in partial fullfillment under the requirements of Information and...
-              	</p>
-	              <div class="d-flex justify-content-between align-items-center">
-	                <div class="btn-group">
-	                   <button type="button" class="btn btn-sm outline_button">
-	                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
-	                  </button>
-	                </div>
-	                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
-	              </div>
-            	</div>
-          	</div>
+				<div class="s6_context">
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<div class="card shadow-sm">
+	            	<img src="assets/images/projects/admission/p1.jpg" alt="project"
+	            		class="bd-placeholder-img card-img-top project_image"
+	            	/>
+	            	<div class="card-body">
+	              	<p class="card-text">
+	              		The Online Admission project for Golden Minds Colleges simplifies enrollment by allowing applicants to enroll digitally. Upon successful enrollment,the system automates the scheduling of appointments for the of required documents, streamlining and organizing the admission process...
+	              	</p>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <button type="button" class="btn btn-sm outline_button">
+		                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+		                  </button>
+		                </div>
+		                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
+		              </div>
+	            	</div>
+	          	</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<div class="card shadow-sm">
+	            	<img src="assets/images/projects/websystem/p1.PNG" alt="project"
+	            		class="bd-placeholder-img card-img-top project_image" 
+	            	/>
+	            	<div class="card-body">
+	              	<p class="card-text">
+	              		The Web-System project for Golden Minds Colleges involved a comprehensive revamp of their existing website system. The initiative aimed to modernize and enhance the user experience by migrating to Laravel and implementing a complete overhaul of the UI/UX design...
+	              	</p>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <button type="button" class="btn btn-sm outline_button">
+		                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+		                  </button>
+		                </div>
+		                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, Laravel and MySQL</small>
+		              </div>
+	            	</div>
+	          	</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<div class="card shadow-sm">
+	            	<img src="assets/images/projects/vs/p1.jpg" alt="project"
+	            		class="bd-placeholder-img card-img-top project_image"
+	            	/>
+	            	<div class="card-body">
+	              	<p class="card-text">
+	              		The Online Voting System for Golden Minds Colleges' Lakan, Lakambini, and Lakandyosa 2023 is a user-friendly web-based platform designed to facilitate voting for the esteemed...
+	              	</p>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                  <button type="button" class="btn btn-sm outline_button">
+		                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+		                  </button>
+		                </div>
+		                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
+		              </div>
+	            	</div>
+	          	</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<div class="card shadow-sm">
+	            	<img src="assets/images/projects/ims/p1.PNG" alt="project" 
+	            		class="bd-placeholder-img card-img-top project_image"
+	            	/>
+	            	<div class="card-body">
+	              	<p class="card-text">
+	              		The Inventory System is a thesis for Senior High School - Golden Minds Colleges Sta. Maria Campus, Bulacan in partial fullfillment under the requirements of Information and...
+	              	</p>
+		              <div class="d-flex justify-content-between align-items-center">
+		                <div class="btn-group">
+		                   <button type="button" class="btn btn-sm outline_button">
+		                  	<i class="fa-solid fa-arrow-right"></i>&nbsp; Read More
+		                  </button>
+		                </div>
+		                <small class="text-body-secondary d-none d-lg-inline">HTML, CSS, JS, Bootstrap, jQuery, PHP and MySQL</small>
+		              </div>
+	            	</div>
+	          	</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -549,7 +551,9 @@
 		            <label for="message">Message</label>
 		          </div>
 		          <hr class="my-4 text-muted">
-          		<button class="w-100 btn fill_button" type="button">Submit</button>
+          		<button class="w-100 btn fill_button" type="button">
+          			<i class="fa-solid fa-paper-plane"></i>&nbsp; Message
+          		</button>
         		</form>
 		      </div>
 				</div>
