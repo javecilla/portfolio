@@ -53,6 +53,8 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PNWHK9WB');</script>
 	<!-- End Google Tag Manager -->
+
+	<script src="https://www.google.com/recaptcha/api.js?render=6LeVRTopAAAAAKe_yHb5gw2AoLpSxUnLK_h3lGDY"></script>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -187,7 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		      		<h1 class="display-5 fw-bold lh-1 mt-3 mb-3 gradient_header">About Me</h1>
 			        <p class="lead description_text">
 					    	<span class="wow fadeInUp">
-					    		I'm <i>Jerome Avecilla</i>, a 19-year-old pursuing a BSIT. Passionate about technology and coding, I'm dedicated to mastering web development. Currently in my first year, I'm working as a Junior Developer at <i><a href="#" class="text-decoration-none text-muted">@Golden Minds Colleges</a></i> while actively freelancing. I am dedicated to continuously learning and growing in the field.
+					    		I'm <i>Jerome Avecilla</i>, a 19-year-old pursuing a BSIT. Passionate about technology and coding, who's dedicated to mastering web development. While actively freelancing. I am dedicated to continuously learning and growing in the field.
 					    	</span>
 					    </p>
 					  </div>
@@ -196,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		      	<div class="s22_context">
 			      	<p class="lead description_text">
 					    	<span class="wow fadeInUp">
-					    		With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2020, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
+					    		With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2021, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
 					    	</span>
 				    	</p>
 				    </div>
@@ -325,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						title="JavaScript"/> 
 					</div>
 					<div class="col-auto mt-2">
-						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="75" height="75"
+						<img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="bootstrap" width="90" height="75"
 						title="Bootstrap"/> 
 					</div>
 					<div class="col-auto mt-2">
@@ -353,11 +355,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						title="GIT"/> 
 					</div>
 					<div class="col-auto mt-2">
-						<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="75" height="75"
+						<img src="https://logowik.com/content/uploads/images/laravel8530.jpg" alt="laravel" width="200" height="160"
 						title="Laravel"/> 
 					</div>
 					<div class="col-auto mt-2">
-						<img src="https://img.freepik.com/premium-vector/seo-search-engine-optimization-minimal-flat-logo-vector-seo-logo-with-magnifying-glass-arrow_664675-1298.jpg" class="rounded-4" alt="seo" width="75" height="75"
+						<img src="https://img.freepik.com/premium-vector/seo-search-engine-optimization-minimal-flat-logo-vector-seo-logo-with-magnifying-glass-arrow_664675-1298.jpg" class="rounded-4" alt="seo" width="180" height="150"
 						title="Search Engine Optimization(SEO)"/> 
 					</div>
 					<div class="col-auto mt-2">
@@ -546,23 +548,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		      <div class="col mb-2">
 						<form method="POST" action="/" id="form" class="p-1 p-md-5  rounded-3 bg-body-tertiary ">
 							<div class="form-floating mb-3">
-		            <input type="text" class="form-control" id="name" placeholder="itsmejerome"/>
+		            <input type="text" class="form-control name" id="name" placeholder="itsmejerome"/>
 		            <label for="name">Your Name</label>
+		            <div id="validationNameFeedback" class="invalid-feedback"></div>
 		          </div>
 		          <div class="form-floating mb-3">
-		            <input type="email" class="form-control" id="email" placeholder="name@example.com"/>
+		            <input type="text" class="form-control email" id="email" placeholder="name@example.com"/>
 		            <label for="email">Your Email</label>
+		            <div id="validationEmailFeedback" class="invalid-feedback"></div>
 		          </div>
 		          <div class="form-floating mb-3">
-		            <input type="text" class="form-control" id="subject" placeholder="mysubject"/>
+		            <input type="text" class="form-control subject" id="subject" placeholder="mysubject"/>
 		            <label for="subject">Subject</label>
+		            <div id="validationSubjectFeedback" class="invalid-feedback"></div>
 		          </div>
 		          <div class="form-floating mb-3">
-		          	<textarea class="form-control" name="message" id="message" rows="10" placeholder="mymessage" style="height: 120px"></textarea>
+		          	<textarea class="form-control message" name="message" id="message" rows="10" placeholder="mymessage" style="height: 120px"></textarea>
 		            <label for="message">Message</label>
+		            <div id="validationMessageFeedback" class="invalid-feedback"></div>
 		          </div>
 		          <hr class="my-4 text-muted">
-          		<button class="w-100 btn fill_button" type="button">
+          		<button class="w-100 btn fill_button" type="submit">
           			<i class="fa-solid fa-paper-plane"></i>&nbsp; Message
           		</button>
         		</form>
@@ -592,6 +598,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   		</div>
 		</div>
 	</footer>
+
+	<div class="backToTop">
+    <a class="p-0 btn btt_btn" id="top" href="#top">
+      <i class="fa-solid fa-arrow-up btt_icon"></i>
+    </a>
+  </div>
 
 	<script type="text/javascript" src="assets/libs/bootstrap@5.3.2/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="assets/libs/fontawesome@6.0/js/all.min.js"></script>

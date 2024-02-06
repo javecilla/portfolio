@@ -551,3 +551,35 @@ input.navcheckbox:checked ~ .bar .mid {
     height: 200px!important;
   }
 }
+
+/*back to top*/
+.btt_btn {
+  width: 50px;
+  height: 50px;
+/*  background-color: #996515; */
+  position: fixed;
+  bottom: 100px!important;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  /* From https://css.glass */
+  background: rgba(74, 74, 74, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  -webkit-backdrop-filter: blur(12.8px);
+  border: none!important;
+} .btt_btn:hover, .btt_btn:focus {
+  background: rgba(74, 74, 74, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  -webkit-backdrop-filter: blur(12.8px);
+  border: none!important;
+  opacity: .8;
+  color: #5a3b2f; 
+}
+.btt_icon {
+  font-size: 25px; 
+  color: #ffffff; 
+  margin-top: 10px!important;
+} 
