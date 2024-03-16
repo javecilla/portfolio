@@ -1,16 +1,20 @@
 <h1 align="center">Hello World <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px>, I'm Jerome Avecilla</h1>
-<h3 align="center">I'm an aspiring Web-Developer!</h3>
+<h3 align="center">Aspiring Full-Stack Developer - Focused on Backend Development</h3>
 
 
-<img align="center" alt="PHP Developer"  width="600" src="https://devtechnosys.com/insights/wp-content/uploads/2022/09/PHP-Developers.gif"/>
+<p align="center">
+    <img alt="PHP Developer"  width="300" src="https://devtechnosys.com/insights/wp-content/uploads/2022/09/PHP-Developers.gif"/>
+</p>
+
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=javecilla&label=Profile%20views&color=0e75b6&style=flat" alt="javecilla" /> </p>
 
 <h3 align="left">About me: </h3>
 <p align="left">
-	I am currently a first-year Bachelor of Science in Information Technology (BSIT) student. My primary focus lies in web development, and I am dedicated to honing my skills in this field.<br/>
-	As a passionate coder, I invest a considerable amount of time honing my skills and expanding my knowledge in various aspects of web development. Since embarking on my journey in 2021, I have become proficient in HTML, CSS, and JavaScript. I am dedicated to continuously learning and growing in the field.
+	I am a first-year Bachelor of Science in Information Technology (BSIT) student with a passion for web development. Since 2021, I have been dedicating my time to honing my skills in HTML, CSS, and JavaScript. My primary focus lies in backend development, where I am continuously expanding my knowledge and expertise.
 </p>
 
-- 🌱 I’m currently learning **Vue JS** as my Framework for my Front End and Docker for containerization
+- 🌱 Currently learning **Vue.js** for front-end development and **Docker** for containerization.
 
 - 👨‍💻 The link below are my diverse portfolio of projects, including academic, personal, and large-scale endeavors. Take a closer look to witness my range of skills and expertise. <br/> [https://javecilla.vercel.app/](https://javecilla.vercel.app/)
 
@@ -21,6 +25,7 @@
 <a href="https://instagram.com/_jzerome" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="instagram" height="30" width="40" /></a>
 <a href="https://discord.gg/javecilla" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="javecilla" height="30" width="40" /></a>
 </p>
+
 
 <h3 align="left">Tech Stacks:</h3>
 <p align="left">
@@ -51,26 +56,31 @@
 	<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
 		<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
 	</a>
+	<a href="javascript:void(0)" target="_blank" rel="noreferrer"> 
+		<img src="https://javecilla.vercel.app/assets/images/logo/vercel.png" alt="vercel" width="90" height="90"/> 
+	</a>
 	<a href="https://laravel.com/" target="_blank" rel="noreferrer"> 
-		<img src="assets/images/logo/laravel.png" alt="laravel" width="60" height="60"/> 
+		<img src="https://javecilla.vercel.app/assets/images/logo/laravel.png" alt="laravel" width="90" height="90"/> 
 	</a>
 	<a href="https://cpanel.net/" target="_blank" rel="noreferrer"> 
-		<img src="assets/images/logo/cpanel.png" alt="cpanel" width="60" height="60"/> 
+		<img src="https://javecilla.vercel.app/assets/images/logo/cpanel.png" alt="cpanel" width="90" height="90"/> 
 	</a>
 	<a href="javascript:void(0)" target="_blank" rel="noreferrer"> 
-		<img src="assets/images/logo/api.png" alt="api" width="50" height="50"/> 
+		<img src="https://javecilla.vercel.app/assets/images/logo/api.png" alt="api" width="70" height="70"/> 
 	</a>
 	<a href="javascript:void(0)" target="_blank" rel="noreferrer"> 
-		<img src="assets/images/logo/seo.png" alt="seo" width="50" height="50"/> 
+		<img src="https://javecilla.vercel.app/assets/images/logo/seo.png" alt="seo" width="70" height="60"/> 
 	</a>
 	<a href="javascript:void(0)" target="_blank" rel="noreferrer"> 
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png" alt="npm" width="40" height="40"/> 
 	</a>
 </p>
 
+<center>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=javecilla&show_icons=true&locale=en&layout=compact" alt="javecilla" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=javecilla&show_icons=true&locale=en" alt="javecilla" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=javecilla&" alt="javecilla" /></p>
+<p>&nbsp;<img align="center" src="https://streak-stats.demolab.com/?user=javecilla&show_icons=true&locale=en" alt="javecilla" /></p>
+</center>
