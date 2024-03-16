@@ -11,7 +11,7 @@
 
 <h3 align="left">About me: </h3>
 <p align="left">
-	I am a first-year Bachelor of Science in Information Technology (BSIT) student with a passion for web development. With a fervent passion for coding, I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2021, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
+	I am a first-year Bachelor of Science in Information Technology (BSIT) student with a passion for web development. I devote significant time to refining my skills and broadening my expertise across various facets of web development. Since embarking my journey in 2021, I have become proficiency in HTML, CSS, and JavaScript. My commitment is unwavering as I strive for continuous learning and growth in this dynamic field.
 </p>
 
 - 🌱 Currently learning **Vue.js** for front-end development and **Docker** for containerization.
